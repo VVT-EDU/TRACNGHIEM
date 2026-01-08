@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trắc nghiệm Nguyên hàm</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- MathJax để hiển thị công thức toán -->
+  <script>
+    window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Trắc nghiệm Nguyên hàm</h1>
+
+    <div id="quiz">
+      <div id="question"></div>
+      <ul id="options"></ul>
+
+      <div class="controls">
+        <button id="prevBtn">Câu trước</button>
+        <button id="nextBtn">Câu tiếp</button>
+        <button id="submitBtn">Nộp bài</button>
+      </div>
+
+      <div id="feedback"></div>
+    </div>
+
+    <div id="result" class="hidden">
+      <h2>Kết quả</h2>
+      <p id="scoreText"></p>
+      <button id="retryBtn">Làm lại</button>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
